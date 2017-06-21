@@ -12,10 +12,15 @@ docker run -e "NEW_RELIC_LICENSE_KEY=..." -e "RABBITMQ_MANAGEMENT_API_URL=http:/
 ## Configuration
 
 Container accepts following environment parameters:
- - `NEW_RELIC_LICENSE_KEY` - New Relic license key (required)
- - `NEW_RELIC_VERBOSE` - All output goes to stdout/stderr. Default: `0`
- - `RABBITMQ_MANAGEMENT_API_URL` - RabbitMQ management plugin URL. Default: `http://guest:guest@localhost:15672`
- - `RABBITMQ_DEBUG` - Additional debug output. Do not send data to New Relic when `true`. Default: `false`
+
+Variable | Description | Default
+---------|-------------|---------
+`NEW_RELIC_LICENSE_KEY` | **Required!** New Relic license key. | - 
+`NEW_RELIC_VERBOSE` | All output goes to stdout/stderr. | `0`
+`RABBITMQ_MANAGEMENT_API_URL` | RabbitMQ management plugin URL. | `http://guest:guest@localhost:15672`
+`RABBITMQ_DEBUG` | Additional debug output. | `false`
+
+> When `RABBITMQ_DEBUG` is `true` agent does not send data to New Relic.
 
 ## Acknowledgements
 
