@@ -1,12 +1,10 @@
-[![Docker Pulls](https://img.shields.io/docker/pulls/tamtamchik/newrelic-rabbitmq.svg?maxAge=2592000)](https://hub.docker.com/r/tamtamchik/newrelic-rabbitmq/)
+# newrelic-rabbitmq [![Docker Pulls](https://img.shields.io/docker/pulls/tamtamchik/newrelic-rabbitmq.svg?maxAge=2592000)](https://hub.docker.com/r/tamtamchik/newrelic-rabbitmq/)
 
-# newrelic-rabbitmq
-
-Docker container for [Pivotal Plugin for New Relic Monitoring for RabbitMQ](https://github.com/pivotalsoftware/newrelic_pivotal_agent)
+Docker container for [Pivotal Plugin for New Relic Monitoring for RabbitMQ](https://github.com/pivotalsoftware/newrelic_pivotal_agent).
 
 ## Usage
 
-## With docker run
+With docker run
 ```
 docker run -e "NEW_RELIC_LICENSE_KEY=..." -e "RABBITMQ_MANAGEMENT_API_URL=http://guest:guest@localhost:15672" tamtamchik/newrelic-rabbitmq
 ```
